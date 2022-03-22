@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+
+    padding-top: 15%;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--azul-escuro);
+    
+}
+
+.f4__quem-somos-caixa {
+
+    background-image: var(--gradiente);
+    padding-bottom: 15%;
+
+}
+
+.f4__quem-somos {
+
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.f4__h1 {
+
+    font-size: 100px;
+    padding-top: 5%;
+    
+}
+
+.f4__h2 {
+
+    padding-top: 10px;
+
+}
+
+.f4__quem-somos-paragrafo {
+
+    font-size: 20px;
+    color: var(--azul-escuro);
+    font-weight: bold;
+    line-height: 30px;
+    text-align: justify;
+    padding: 3% 10%;
+}
+

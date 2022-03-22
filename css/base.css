@@ -1,0 +1,13 @@
+:root {
+
+    --preto: #000000;
+    --branco: #ffffff;
+    --azul-escuro: #132235;
+    --azul-esverdeado: #6DDAD3;
+    --gradiente: linear-gradient(to bottom, var(--azul-escuro), var(--azul-esverdeado), var(--branco));
+    --gradiente1: linear-gradient(to bottom, var(--azul-esverdeado), var(--branco));
+    --gradiente2: linear-gradient(to bottom, var(--branco), var(--azul-esverdeado));
+    --gradiente3: linear-gradient(to bottom, var(--azul-esverdeado), var(--azul-escuro));
+}
+
+

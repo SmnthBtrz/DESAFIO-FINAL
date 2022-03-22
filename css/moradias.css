@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+
+    padding-top: 12% ;
+    font-size: 100%;
+    background-color: var(--azul-escuro);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.f4__moradias {
+     background-image: var(--gradiente);
+     padding-top: 5%;
+   
+
+}
+
+.f4__h2 {
+
+    padding-bottom: 2%;
+}
+
+
+.f4__h4 {
+
+    font-size: 18px;
+    color: var(--branco);
+    text-align: center;
+
+
+}
+
+
+.f4__moradias-disponiveis-caixa {
+
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.f4__moradias-disponiveis-item {
+
+    text-align:center;
+    padding: 2%;
+    
+}
+
+.f4__moradias-disponiveis-item h3{
+
+    padding-top: 2% ;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.f4__moradias-disponiveis-item p {
+
+    text-align:justify;
+    font-size: 18px;
+    color: var(--preto);
+    padding: 5%;
+}
+
+
+.f4__moradias-disponiveis-imagem {
+
+    width: 400px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.f4__conteudo-rodape {
+
+    padding-top: 10%;
+}

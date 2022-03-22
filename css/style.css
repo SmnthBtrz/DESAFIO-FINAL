@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+
+    padding-top: 12% ;
+    font-size: 100%;
+    background-color: var(--azul-escuro);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* ============ CONTEÚDO CABEÇALHO ============= */
+
+.f4__cabecalho {
+
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: var(--azul-escuro);
+    position: fixed;
+    width: 100%;
+    z-index: 1500;
+
+}
+
+
+.f4__cabecalho-img {
+
+   height: 100px;
+}
+
+.f4__cabecalho-navegacao {
+    
+    display: flex;
+    gap: 25px;
+}
+
+
+.f4__cabecalho-link {
+
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 12px;
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+
+}
+
+.f4__cabecalho-link:hover {
+
+    color: var(--azul-esverdeado);
+    font-weight: bold;
+}
+
+/* ================ PRIMEIRA SEÇÃO =================*/ 
+
+.f4__conteudo-principal {
+
+    background-image: var(--gradiente);
+    padding: 5%;
+
+}
+
+.f4__conteudo-principal-primeira-secao {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.f4__conteudo-principal-texto {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.f4__h1 {
+
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--branco);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.f4__h2 {
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--branco);
+    text-shadow:  3px 3px rgba(0, 0, 0, 0.459);
+}
+
+.f4__principal-paragrafo {
+
+    color: var(--branco);
+    text-align: justify;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px;
+    
+
+}
+
+.f4__botao-grande-caixa{
+
+    display: absolute;
+    text-align: center;
+    padding: 2%
+
+}
+
+.f4__botao-grande {
+
+    background-color: var(--azul-esverdeado);
+    color: var(--branco);
+    width: 300px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    
+}
+
+.f4__botao-grande:hover {
+
+    color: var(--branco);
+    background-color: var(--preto);
+
+}
+
+.f4__conteudo-principal-imagem {
+
+    height: 600px;
+    
+
+}
+
+/* ============= SEGUNDA SEÇÃO ================= */ 
+
+.f4__segunda-secao {
+
+    padding: 5% 20%;
+    flex-flow: column wrap;
+}
+
+.f4__conteudo-aluguel{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+
+.f4__h3 {
+   
+    color: var(--preto);
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.f4__conteudo-aluguel-texto {
+
+    color: var(--preto);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 3%;
+
+}
+
+.f4__conteudo-aluguel-imagem {
+
+    width: 600px;
+    margin-left: 10px;
+    margin-top: 5%;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+   
+}
+
+.f4__botao-medio-caixa {
+
+    display: absolute;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+.f4__botao-medio {
+
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    width: 250px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    bottom: 0;
+    justify-content:center;
+    
+}
+
+
+.f4__botao-medio:hover {
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+}
+
+
+/* ================= TERCEIRA SEÇÃO ====================== */ 
+
+
+.f4__terceira-secao {
+
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+ 
+
+}
+
+.f4__conteudo-depoimentos {
+
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    align-content: center;
+    
+
+}
+
+.f4__conteudo-depoimentos-caixa {
+
+    padding: 1%;
+    justify-content: center;
+
+}
+
+.f4__h3-depoimento {
+
+
+    color: var(--preto);
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.f4__paragrafo-depoimento {
+
+    color: var(--preto);
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+
+}
+.f4__conteudo-depoimentos-imagem {
+
+    height: 400px;
+    padding-left: 20px;
+    justify-content:center;
+    
+}
+
+/* =================== RODAPÉ ==================== */
+
+.f4__conteudo-rodape {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--branco);
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.f4__rodape-logo {
+
+    display: flex;
+  
+}
+
+.f4__rodape-redes {
+
+    display: flex;
+    margin: 2rem 1rem;
+    
+}
+
+.f4__rodape-redes-link {
+
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+}
+
+
+
+.f4__rodape-navegacao {
+
+    color: var(--preto);
+    text-align: center;
+    line-height: 3px;
+
+}
+
+.f4__rodape-link {
+
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 .5rem .7rem;
+    cursor: pointer;
+
+}
+
+.f4__rodape-link:hover {
+
+    font-weight: bold;
+    color: var(--azul-esverdeado);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
