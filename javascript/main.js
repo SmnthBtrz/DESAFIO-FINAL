@@ -11,9 +11,8 @@ let dominioTamanho = mensagemValores.substring(mensagemValores.indexOf("@") + 1,
 
 
 function enviarMensagem () {
-    mensagem === ''
-
-
+    mensagem === '';
+}
 
 function enviarEmail () {
     (conteudo_email.search('@') === -1) || 
@@ -24,11 +23,12 @@ function enviarEmail () {
     (conteudo_email.search(' ')) !== -1 ||
     (dominioTamanho.search(".com") === -1)
 
+}
 
-if(enviarMensagem == true) {
+if(enviarMensagem == "") {
     alert(` Erro no envio: Insira uma mensagem ${usuario}`)
 }
-if(enviarEmail == true){
+if(enviarEmail == ""){
     alert('Erro no envio: Endereço de email inválido!')
 }
 
@@ -36,7 +36,6 @@ if((enviarMensagem === false) && (enviarEmail === false)){
     alert(`Obrigado pelo contato, ${usuario}!`)
 }
 
-}}
 
 const formulario = document.querySelector('.f4__formulario')
 formulario.addEventListener('.f4__botao-formulario', e => {

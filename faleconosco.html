@@ -48,22 +48,40 @@
 
             <fieldset>
                 <div class="f4__formulario-email">
-                    <legend for="email"><strong>E-mail: </strong></legend>
-                    <input type="email" id="email" value="" name="email" >
+                    <legend id="form" action="#"><strong>E-mail: </strong></legend>
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="email"
+                        name=""
+                        required
+                        maxlength="32"
+                        minlength="1"
+                        onkeydown="validation()"/>
+
+                <span id="text"></span>
+                
                 </div>
             </fieldset>
-
+    
             <fieldset>
-                <div class="f4__formulario-mensagem">
-                    <legend for="mensagem"><strong>Mensagem: </strong></legend>
-                    <textarea rows="6" style="width: 26em" id="mensagem" value="mensagem" name="mensagem"></textarea><br>
-                </div>
-            </fieldset> 
+              <div class="f4__formulario-mensagem">
+                <legend for="mensagem"><strong>Mensagem: </strong></legend>
+                <textarea
+                  rows="6"
+                  style="width: 26em"
+                  id="mensagem"
+                  value="mensagem"
+                  name="mensagem"
+                  required></textarea><br/>
+              </div>
+            </fieldset>
 
             <div class="f4__botao-caixa">
                 <button class="f4__botao-formulario" type="submit" onsubmit="">Enviar</button>
             </div>
-        </form>
+
+            </form>
 
     </main>
 
@@ -94,7 +112,32 @@
     
     </footer>
 
-<script src="./javascript/main.js"></script>
+    <script type="text/javascript">
+        function validation() {
+          var form = document.getElementById("form");
+          var email = document.getElementById("email").value;
+          var text = document.getElementById("text");
+          var pattern = /(^\w.*@[\w-]+\.\w)/;
+
+          if (email.match(pattern)) {
+            form.classList.add("Válido");
+            form.classList.remove("Inválido");
+            text.innerHTML = "Email Válido";
+            text.styled.color = "#00ff00";
+          } else {
+            form.classList.remove("Válido");
+            form.classList.add("Inválido");
+            text.innerHTML = "Email inválido";
+            text.styled.color = "#00ff00";
+          }
+          if (email === "") {
+            form.classList.add("Válido");
+            form.classList.remove("Inválido");
+            text.innerHTML = "";
+            text.styled.color = "#00ff00";
+          }
+        }
+      </script>
 
 </body>
 
