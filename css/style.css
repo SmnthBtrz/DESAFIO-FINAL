@@ -230,8 +230,9 @@ body {
 
 .f4__botao-medio:hover {
 
-    color: var(--preto);
+   
     background-color: var(--branco);
+    color: var(--azul-escuro);
 
 }
 
